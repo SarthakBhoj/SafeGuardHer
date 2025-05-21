@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:id="@+id/reslinear"
+    android:padding="20dp"
+    tools:context=".StudentLogin">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user_TIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:outlineAmbientShadowColor="@color/white"
+        android:layout_marginTop="40dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etxtUsername"
+            android:hint="Enter Mobile Number"
+            android:layout_marginTop="40dp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:textColorHint="#949494"
+            android:background="@drawable/background_input"
+            android:textSize="20dp"
+            android:padding="16dp"
+            android:inputType="phone"
+            android:textStyle="bold"
+            >
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pass_TIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+            >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etxtPassword"
+            android:hint="Enter Password"
+            android:layout_marginTop="40dp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:textColorHint="#949494"
+            android:textSize="20dp"
+            android:padding="16dp"
+            android:background="@drawable/background_input"
+            android:textStyle="bold"
+            android:inputType="textPassword"
+            >
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="monospace"
+        android:onClick="btnLogIn"
+        android:text="SIGN IN"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold">
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="monospace"
+        android:onClick="btnRegister"
+        android:text="Student signup"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

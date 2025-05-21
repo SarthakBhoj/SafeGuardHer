@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_app"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="tiramisu">
+        <activity
+            android:name=".Stud_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".StudentDetail"
+            android:exported="false" />
+        <activity
+            android:name=".StudentList"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherLogin"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherModule"
+            android:exported="false" />
+        <activity
+            android:name=".LeaveList"
+            android:exported="false" />
+        <activity
+            android:name=".LeaveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParentModule"
+            android:exported="false" />
+        <activity
+            android:name=".Parent_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Parent_Register"
+            android:exported="false" />
+        <activity
+            android:name=".Parent_Login"
+            android:exported="false" />
+        <activity
+            android:name=".User_Selection"
+            android:exported="false" />
+        <activity
+            android:name=".StudentRegister"
+            android:exported="false" />
+        <activity
+            android:name=".StudentLogin"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <service android:name=".MyLocationService" />
+    </application>
+
+</manifest>
